@@ -1,0 +1,25 @@
+# fly.toml 로 복사해서 app 이름을 바꿔 쓰세요: cp fly.toml.example fly.toml
+app = "jobkit-change-me"
+primary_region = "nrt"
+
+[build]
+
+[env]
+  DATA_DIR = "/data"
+  SEED_DIR = "/data/seed"
+
+[[mounts]]
+  source = "jobkit_data"
+  destination = "/data"
+
+[http_service]
+  internal_port = 3000
+  force_https = true
+  auto_stop_machines = "stop"
+  auto_start_machines = true
+  min_machines_running = 0
+
+[[vm]]
+  memory = "1gb"
+  cpu_kind = "shared"
+  cpus = 1

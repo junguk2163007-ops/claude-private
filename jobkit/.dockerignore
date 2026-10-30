@@ -1,0 +1,9 @@
+node_modules
+.next
+.git
+data
+seed
+tests/.tmp
+.env
+.env.*
+*.log

@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-kr), "Malgun Gothic", "Apple SD Gothic Neo", sans-serif;
+}
+
+html, body { background: #f6f7f9; color: #111827; }
+body { min-width: 1100px; word-break: keep-all; }
+input, textarea, select { font: inherit; }

@@ -1,0 +1,16 @@
+services:
+  jobkit:
+    build: .
+    image: jobkit:latest
+    ports:
+      - "127.0.0.1:3000:3000"
+    environment:
+      APP_PASSWORD: ${APP_PASSWORD:?APP_PASSWORD 를 .env 에 설정하세요}
+      SESSION_SECRET: ${SESSION_SECRET:-}
+      # http://localhost 가 아닌 주소(사내망 IP 등)로 http 접속할 때만 1
+      COOKIE_INSECURE: ${COOKIE_INSECURE:-0}
+    volumes:
+      - ./data:/data
+      # 개인정보 시드(첫 실행 때 한 번만 DB 에 주입). 없으면 seed.example 사용
+      - ./seed:/data/seed:ro
+    restart: unless-stopped

@@ -1,0 +1,231 @@
+{
+  "profile": {
+    "name": "홍길동",
+    "birth": "1984-04-16",
+    "phone": "010-0000-0000",
+    "email": "applicant@example.com",
+    "address": "대구광역시 북구 예시로 1",
+    "education": [
+      {
+        "school": "경남정보대학교",
+        "status": "졸업",
+        "major": "",
+        "start": "2003-03",
+        "end": "2008-03"
+      }
+    ],
+    "military": {
+      "branch": "육군",
+      "corps": "수색대",
+      "rank": "병장",
+      "start": "2004-02",
+      "end": "2006-02",
+      "discharge": "만기제대"
+    },
+    "licenses": [
+      {
+        "name": "공인중개사",
+        "issuer": "",
+        "date": "2023"
+      },
+      {
+        "name": "운전면허 1종 보통",
+        "issuer": "경찰청",
+        "date": "2003"
+      },
+      {
+        "name": "건설기계조종사면허",
+        "issuer": "관할 구청",
+        "date": "2016"
+      }
+    ],
+    "careers": [
+      {
+        "start": "2010",
+        "end": "2015",
+        "company": "SH분양팀",
+        "duties": "부동산 분양 상담 및 계약 체결, 고객 응대, 팀 단위 영업 활동을 통한 분양 목표 달성"
+      },
+      {
+        "start": "2016",
+        "end": "2018",
+        "company": "㈜가람",
+        "duties": "건설현장 내 현관 석재 시공 현장관리, 자재 검수 및 시공 일정 조율, 품질·안전 점검"
+      },
+      {
+        "start": "2020",
+        "end": "2022",
+        "company": "㈜쿠팡",
+        "duties": "차량을 이용한 택배 배송(배송기사), 배송 경로 관리 및 시간 내 정확한 배송, 안전운행 준수"
+      }
+    ]
+  },
+  "qualifications": [
+    {
+      "key": "fire_assist",
+      "name": "소방안전관리자 보조",
+      "aliases": [
+        "소방안전관리자 보조",
+        "소방안전관리 보조자",
+        "소방안전관리보조자",
+        "소방보조선임",
+        "소방안전관리자 보조선임",
+        "소방보조",
+        "보조선임 가능"
+      ],
+      "have": false,
+      "barrier": "low",
+      "promisable": true,
+      "promise_phrase": "소방안전관리보조자 자격을 빠른 시일 내에 취득",
+      "hint": "한국소방안전원 3급 소방안전관리자 강습교육(3일, 약 144,000원)+시험 합격으로 해결 가능"
+    },
+    {
+      "key": "energy_engineer",
+      "name": "에너지관리기사",
+      "aliases": [
+        "에너지관리기사",
+        "에너지 관리기사"
+      ],
+      "have": false,
+      "barrier": "medium",
+      "promisable": true,
+      "promise_phrase": "에너지관리기사 취득을 목표로 준비",
+      "hint": "국가기술자격(기사). 응시 자격 확인 필요"
+    },
+    {
+      "key": "mech_maintenance",
+      "name": "기계설비유지관리자",
+      "aliases": [
+        "기계설비유지관리자",
+        "기계설비 유지관리자"
+      ],
+      "have": false,
+      "barrier": "high",
+      "promisable": false,
+      "promise_phrase": "",
+      "hint": "등급별 관련 자격+실무경력 요건이 필요해 단기 취득이 불가능. 공고의 '보조' 표기 여부 확인"
+    },
+    {
+      "key": "electric",
+      "name": "전기 관련 자격",
+      "aliases": [
+        "전기기사",
+        "전기산업기사",
+        "전기기능사",
+        "전기안전관리자"
+      ],
+      "have": false,
+      "barrier": "high",
+      "promisable": false,
+      "promise_phrase": "",
+      "hint": ""
+    },
+    {
+      "key": "apt_exp",
+      "name": "아파트 근무 경력",
+      "aliases": [
+        "아파트 근무",
+        "아파트 경력",
+        "아파트 유경험",
+        "아파트 및 관련 업무"
+      ],
+      "have": false,
+      "barrier": "medium",
+      "promisable": false,
+      "promise_phrase": "",
+      "hint": "자소서 직무 관련 경험으로 보완"
+    },
+    {
+      "key": "related_exp",
+      "name": "관련 업무 경력",
+      "aliases": [
+        "관련 업무 유경험",
+        "관련 업무 경력",
+        "업무 관련 경력"
+      ],
+      "have": false,
+      "barrier": "medium",
+      "promisable": false,
+      "promise_phrase": "",
+      "hint": ""
+    },
+    {
+      "key": "realtor",
+      "name": "공인중개사",
+      "aliases": [
+        "공인중개사"
+      ],
+      "have": true,
+      "barrier": "none",
+      "promisable": false,
+      "promise_phrase": "",
+      "hint": ""
+    },
+    {
+      "key": "driver",
+      "name": "운전면허",
+      "aliases": [
+        "운전면허",
+        "1종 보통",
+        "2종 보통",
+        "2종 이상"
+      ],
+      "have": true,
+      "barrier": "none",
+      "promisable": false,
+      "promise_phrase": "",
+      "hint": ""
+    },
+    {
+      "key": "construction_machine",
+      "name": "건설기계조종사",
+      "aliases": [
+        "건설기계조종사"
+      ],
+      "have": true,
+      "barrier": "none",
+      "promisable": false,
+      "promise_phrase": "",
+      "hint": ""
+    },
+    {
+      "key": "military",
+      "name": "병역",
+      "aliases": [
+        "병역",
+        "군필",
+        "군필 또는 면제"
+      ],
+      "have": true,
+      "barrier": "none",
+      "promisable": false,
+      "promise_phrase": "",
+      "hint": ""
+    },
+    {
+      "key": "highschool",
+      "name": "학력 고졸 이상",
+      "aliases": [
+        "고졸 이상",
+        "고등학교 졸업"
+      ],
+      "have": true,
+      "barrier": "none",
+      "promisable": false,
+      "promise_phrase": "",
+      "hint": ""
+    }
+  ],
+  "settings": {
+    "near_keywords": [
+      "북구",
+      "칠곡",
+      "침산",
+      "구암",
+      "관음",
+      "국우",
+      "도남"
+    ],
+    "mail_signature": "{name} 드림\n{phone}"
+  }
+}

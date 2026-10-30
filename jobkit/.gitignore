@@ -1,0 +1,13 @@
+node_modules/
+.next/
+out/
+next-env.d.ts
+*.tsbuildinfo
+.env
+.env.local
+.env.*.local
+# 개인정보: 원격 저장소에 올리지 않는다
+seed/
+data/
+tests/.tmp/
+backups/
