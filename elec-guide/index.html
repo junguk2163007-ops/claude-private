@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>전열·전등 민원 대처</title>
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="description" content="전기팀 — 전열·전등 민원 판정·복구·당직일지 가이드">
+  <meta name="theme-color" content="#0f2340">
+  <meta name="color-scheme" content="light dark">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="민원 대처">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icons/icon-180.png">
+  <link rel="stylesheet" href="style.css">
+  <script>
+    // 화면 깜빡임 방지: 저장된 테마를 먼저 적용
+    try { var t = localStorage.getItem('sqelec:theme'); if (t === '"light"' || t === '"dark"') document.documentElement.dataset.theme = JSON.parse(t); } catch (e) {}
+  </script>
+  <script type="module" src="app.js"></script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="tb-inner">
+      <button type="button" id="btnBack" class="tb-btn" aria-label="뒤로"><span class="tb-ic" aria-hidden="true">←</span><span class="tb-tx">뒤로</span></button>
+      <div class="tb-step" id="stepLabel" aria-live="polite"></div>
+      <button type="button" id="btnMenu" class="tb-btn" aria-label="메뉴"><span class="tb-ic" aria-hidden="true">☰</span><span class="tb-tx">메뉴</span></button>
+      <button type="button" id="btnHome" class="tb-btn" aria-label="처음으로"><span class="tb-ic" aria-hidden="true">🏠</span><span class="tb-tx">처음</span></button>
+    </div>
+  </header>
+
+  <main id="main">
+    <div id="flow"></div>
+    <div id="view" hidden></div>
+    <footer class="foot" id="foot">전기팀 현장용 · 보조용 가이드이며 현장 안전 규정이 우선입니다</footer>
+  </main>
+
+  <div id="modal" class="modal" hidden></div>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <div id="updateBar" class="update-bar" hidden>
+    <span>새 버전이 있습니다</span>
+    <button type="button" id="btnUpdate" class="btn-mini">적용</button>
+  </div>
+
+  <noscript><p class="noscript">이 앱은 JavaScript가 필요합니다. Safari 설정에서 JavaScript를 켜 주세요.</p></noscript>
+</body>
+</html>
