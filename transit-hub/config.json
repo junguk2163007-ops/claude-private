@@ -1,0 +1,23 @@
+[
+  {
+    "id": "home",
+    "label": "집으로",
+    "memo": "모든 값은 예시/추정입니다. 실측 후 교체하세요. rideMinutes·walkMinutesToBusStop 은 추정, nodeId 는 find-stop 으로 확인, cityCode 31100 은 미확인.",
+    "subway": { "station": "연신내", "lineId": "1003", "lineName": "3호선", "toward": "구파발", "rideMinutes": 10 },
+    "exit": { "station": "원흥", "lineId": "1003", "toward": "원당", "goal": "버스 환승", "walkMinutesToBusStop": 5 },
+    "bus": {
+      "stopName": "원흥역",
+      "cityCode": "31100",
+      "nodeId": "TODO",
+      "watchRoutes": ["24A", "24B", "075B", "730", "95"]
+    }
+  },
+  {
+    "id": "work",
+    "label": "출근",
+    "memo": "원흥 → 연신내(GTX-A 환승). 버스 없음. rideMinutes 는 추정.",
+    "subway": { "station": "원흥", "lineId": "1003", "lineName": "3호선", "toward": "삼송", "rideMinutes": 10 },
+    "exit": { "station": "연신내", "lineId": "1003", "toward": "불광", "goal": "GTX-A 환승", "walkMinutesToBusStop": null },
+    "bus": null
+  }
+]

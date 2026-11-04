@@ -1,0 +1,17 @@
+{
+  "name": "transit-hub",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "출퇴근 환승판 — 지하철 도착·빠른 하차 칸-문·환승 버스를 한 화면에",
+  "scripts": {
+    "dev": "wrangler pages dev --port 8788",
+    "dev:mock": "wrangler pages dev --port 8788 --binding MOCK=1",
+    "test": "node --test tests/*.test.js",
+    "find-stop": "node scripts/find-stop.js",
+    "probe-subway": "node scripts/probe-subway.js"
+  },
+  "devDependencies": {
+    "wrangler": "^4.0.0"
+  }
+}
