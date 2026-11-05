@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>환승판</title>
+  <meta name="description" content="출퇴근 환승판 — 지하철 도착, 빠른 하차 칸-문, 환승 버스">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#0a0e13">
+  <meta name="color-scheme" content="dark">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="환승판">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Noto+Sans+KR:wght@400;500;700&display=swap">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="top">
+    <div class="tabs" id="tabs" role="tablist" aria-label="경로"></div>
+    <span class="badge" id="badge" hidden>모의 데이터</span>
+  </header>
+
+  <main id="main" aria-busy="true">
+    <div class="notice" id="notice" role="status" aria-live="polite" hidden></div>
+
+    <section class="card subway" aria-labelledby="sw-title">
+      <h2 id="sw-title" class="card-title">지하철</h2>
+      <div class="big" id="sw-big" aria-live="off"><span class="num">–</span><span class="unit"></span></div>
+      <p class="line" id="sw-line">불러오는 중…</p>
+      <p class="next" id="sw-next"></p>
+    </section>
+
+    <section class="card exit" aria-labelledby="ex-title">
+      <h2 id="ex-title" class="card-title">내릴 곳</h2>
+      <div class="exit-body">
+        <div class="big" id="ex-big"><span class="num">–</span></div>
+        <p class="line" id="ex-line"></p>
+      </div>
+    </section>
+
+    <section class="card bus" id="bus-card" aria-labelledby="bus-title" hidden>
+      <h2 id="bus-title" class="card-title">버스</h2>
+      <p class="plan" id="bus-plan"></p>
+      <ul class="rows" id="bus-rows"></ul>
+    </section>
+  </main>
+
+  <footer class="bar">
+    <button type="button" id="refresh" class="refresh">지금 확인</button>
+    <p class="asof" id="asof">–</p>
+  </footer>
+
+  <noscript><p class="notice" style="margin:16px">JavaScript 가 필요합니다.</p></noscript>
+  <script src="app.js" defer></script>
+</body>
+</html>

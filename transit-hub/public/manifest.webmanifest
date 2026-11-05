@@ -1,0 +1,17 @@
+{
+  "name": "환승판",
+  "short_name": "환승판",
+  "description": "출퇴근 환승판 — 지하철·빠른 하차·환승 버스",
+  "lang": "ko",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0a0e13",
+  "theme_color": "#0a0e13",
+  "icons": [
+    { "src": "icons/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" },
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" }
+  ]
+}
