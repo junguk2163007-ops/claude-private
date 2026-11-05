@@ -106,6 +106,7 @@
     if (ex.found) {
       el.exLine.append(`${ex.car}번째 칸 ${ex.door}번 문${ex.goal ? ` · ${ex.goal}` : ''}`);
       if (!ex.verified) el.exLine.append(h('span', 'tag', '예시'));
+      if (ex.side) el.exLine.append(h('div', 'side', `내리는 문 ${ex.side}`));
       if (ex.note) el.exLine.append(h('div', 'next', ex.note));
     } else {
       el.exLine.append('빠른하차 정보 없음 (data/fast-exit.json 에 추가)');

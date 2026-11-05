@@ -64,9 +64,9 @@ test('normalizeBus: 관심 노선만, 빈 노선은 정보 없음(seconds:null) 
 });
 
 test('lookupExit: 방향이 다르면 대체하지 않는다', () => {
-  const entries = [{ station: '원흥', lineId: '1003', toward: '원당', goal: '버스 환승', car: 6, door: 3, verified: false }];
+  const entries = [{ station: '원흥', lineId: '1003', toward: '원당', goal: '버스 환승', car: 6, door: 3, side: '왼쪽', verified: false }];
   const hit = lookupExit(entries, { station: '원흥', lineId: '1003', toward: '원당', goal: '버스 환승' });
-  assert.deepEqual([hit.found, hit.car, hit.door, hit.verified], [true, 6, 3, false]);
+  assert.deepEqual([hit.found, hit.car, hit.door, hit.side, hit.verified], [true, 6, 3, '왼쪽', false]);
   assert.equal(lookupExit(entries, { station: '원흥', lineId: '1003', toward: '삼송', goal: '버스 환승' }).found, false);
 });
 

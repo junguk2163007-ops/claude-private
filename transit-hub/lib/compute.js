@@ -81,12 +81,13 @@ export function lookupExit(entries, ex) {
     (e) => e.station === ex.station && String(e.lineId) === String(ex.lineId) && e.toward === ex.toward,
   );
   const hit = same.find((e) => e.goal === ex.goal) ?? same[0];
-  if (!hit) return { ...base, found: false, car: null, door: null, note: '', verified: false, source: 'none' };
+  if (!hit) return { ...base, found: false, car: null, door: null, side: null, note: '', verified: false, source: 'none' };
   return {
     ...base,
     found: true,
     car: hit.car,
     door: hit.door,
+    side: hit.side ?? null,
     note: hit.note ?? '',
     verified: hit.verified === true,
     source: 'local',

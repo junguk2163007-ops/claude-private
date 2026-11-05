@@ -1,7 +1,7 @@
 {
-  "_readme": "빠른하차 칸-문. exit.toward 는 '내리는 역에 열차가 진입해 가는 방향의 다음 역'(예: 원흥에서 대화 쪽으로 가면 원당). verified:false 는 화면에 '예시'로 표시된다. 현장에서 실측한 뒤 verified:true 로 바꾼다.",
+  "_readme": "빠른하차 칸-문. side 는 내리는 문이 열리는 쪽(선택). exit.toward 는 '내리는 역에 열차가 진입해 가는 방향의 다음 역'(예: 원흥에서 대화 쪽으로 가면 원당). verified:false 는 화면에 '예시'로 표시된다. 현장에서 실측한 뒤 verified:true 로 바꾼다.",
   "entries": [
     { "station": "원흥", "lineId": "1003", "toward": "원당", "goal": "버스 환승", "car": 6, "door": 3, "note": "예시 값 — 실측 필요", "verified": false },
-    { "station": "연신내", "lineId": "1003", "toward": "불광", "goal": "GTX-A 환승", "car": 4, "door": 2, "note": "예시 값 — 실측 필요", "verified": false }
+    { "station": "연신내", "lineId": "1003", "toward": "불광", "goal": "GTX-A 환승", "car": 10, "door": 1, "side": "왼쪽", "note": "카카오맵 '빠른 환승' 표기(2026-11-05 캡처, 원흥→연신내 수서행)", "verified": true }
   ]
 }
